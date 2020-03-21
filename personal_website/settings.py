@@ -25,9 +25,6 @@ SECRET_KEY = '1d)4))rr5s+goycaf468&$f9--&9&#p(o!*pc^h5)8yg-!)=ws'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -54,7 +51,7 @@ ROOT_URLCONF = 'personal_website.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['personal_website/templates', 'hello_world/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
